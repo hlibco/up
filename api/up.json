@@ -1,0 +1,19 @@
+{
+  "name": "cool-api",
+  "profile": "serverless",
+  "regions": ["us-west-2"],
+  "lambda": {
+    "memory": 512,
+    "timeout": 2
+  },
+  "proxy": {
+    "command": "node ./src/server.js",
+    "backoff": {
+      "min": 500,
+      "max": 1500,
+      "factor": 1.5,
+      "attempts": 5,
+      "jitter": true
+    }
+  }
+}

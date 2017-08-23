@@ -1,0 +1,12 @@
+{
+  "name": "cool-app",
+  "profile": "serverless",
+  "regions": ["us-west-2"],
+  "type": "static",
+  "static": {
+    "dir": "public"
+  },
+  "cors": {
+    "enable": true
+  }
+}
